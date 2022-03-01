@@ -1,0 +1,29 @@
+
+void setup(){
+  
+  stroke (255,200,0,90); 
+size (700,700); 
+ 
+
+ background (0);
+ }
+
+void draw(){
+  stroke  (255,255,255,50); 
+  line (random(700), random (700), random(700), random (700)); 
+  
+  float t = (float )frameCount ;
+  
+  translate (width/2, height/2); 
+  
+  rotate (t/600); 
+  stroke ( 255,241,0,154); 
+ 
+  line (cos (t/2)*100,sin(t/2)*100,sin(t/10)*200,cos(t/10)*200);
+ 
+
+  //saveFrame("weblink/####.png"); 
+  if (  frameCount >630) exit (); 
+
+}
+  
