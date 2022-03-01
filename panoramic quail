@@ -1,0 +1,38 @@
+
+float angle = 10;
+void setup (){
+  size (700,700); 
+frameRate(60);
+ }
+
+void draw (){
+
+   float wave = sin (radians(frameCount)); 
+ float w = wave*map (0,0,height, 2350,0); 
+ 
+ 
+ 
+ background (0); 
+ translate ( width/2, height/2 ); 
+
+rotate (radians(angle/300));
+
+
+
+
+ 
+ for (int i = 0; i <500; i++) {
+rotate (110);  
+
+stroke (255,200);
+line (-550,i+w,450, i++);
+
+stroke ( 40,255,0,125);
+line(-650,-i+w,350,i++);
+
+
+angle ++ ;
+
+
+ }
+}
