@@ -1,0 +1,2 @@
+# stargaze
+ float angle = 10; void setup (){   size (700,700);  frameRate(160);  }  void draw (){    saveFrame("JAIL/####.png");    float wave = sin (radians(frameCount));   float w = wave*map (0,0,height, 2350,0);         background (0);   translate ( width/2, height/2 );   rotate (radians(angle/300));        for (int i = 0; i &lt;250; i++) { rotate (150);     stroke(255,255,255);  line (-850,-i+w/22,550,i++);     angle ++ ;    } }
