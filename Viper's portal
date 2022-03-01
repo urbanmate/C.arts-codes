@@ -1,0 +1,24 @@
+void setup (){ 
+size (700,700); 
+background (0); 
+noFill (); 
+stroke (91,225,0,60 ); 
+} 
+
+
+void draw () {
+  
+  float t  = (float )frameCount ; 
+  
+  translate ( width /2 , height /2 ) ; 
+  
+  rotate ( t/200);
+  
+  ellipse ( sin ( t/50) * ( t/100) , cos (t/50)* t/100, t /cos (t) , t/sin (t)); 
+  
+  
+  
+  
+  
+  
+} 
